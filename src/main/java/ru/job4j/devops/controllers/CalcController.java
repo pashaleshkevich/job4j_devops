@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.*;
 import ru.job4j.devops.models.Result;
 import ru.job4j.devops.models.TwoArgs;
 
+/**
+ * Controller class application
+ * @author PASHA LESHKEVICH
+ * @version 1.0
+ */
 @RestController
 @RequestMapping("calc")
 public class CalcController {

@@ -4,6 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Class TwoArgs
+ * @author PASHA LESHKEVICH
+ * @version 1.0
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

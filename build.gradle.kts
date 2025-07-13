@@ -51,14 +51,14 @@ tasks.withType<Test> {
 }
 
 tasks.register<Zip>("zipJavaDoc") {
-    group = "documentation" // Группа, в которой будет отображаться задача
+    group = "documentation"
     description = "Packs the generated Javadoc into a zip archive"
 
-    dependsOn("javadoc") // Указываем, что задача зависит от выполнения javadoc
+    dependsOn("javadoc")
 
-    from("build/docs/javadoc") // Исходная папка для упаковки
-    archiveFileName.set("javadoc.zip") // Имя создаваемого архива
-    destinationDirectory.set(layout.buildDirectory.dir("archives")) // Директория, куда будет сохранен архив
+    from("build/docs/javadoc")
+    archiveFileName.set("javadoc.zip")
+    destinationDirectory.set(layout.buildDirectory.dir("archives"))
 }
 
 tasks.spotbugsMain {
